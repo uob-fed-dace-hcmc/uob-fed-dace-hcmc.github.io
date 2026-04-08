@@ -1,0 +1,16 @@
+# robots.txt — HCM Cluster
+# ============================================================
+# This file tells search engine crawlers which parts of your
+# site they are allowed to access.
+#
+# HOW TO USE:
+# Replace YOUR-GITHUB-USERNAME with your actual GitHub
+# username (or custom domain if you have one).
+# ============================================================
+
+# Allow all well-behaved crawlers to index everything
+User-agent: *
+Allow: /
+
+# Point crawlers to your sitemap for faster discovery
+Sitemap: https://uob-fed-dace-hcmc.github.io/sitemap.xml

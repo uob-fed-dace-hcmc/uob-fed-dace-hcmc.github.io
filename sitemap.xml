@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SITEMAP.XML — HCM Cluster
+  ============================================================
+  This file tells search engines which pages exist on your
+  site and how often they change.
+
+  HOW TO USE:
+  1. Replace YOUR-GITHUB-USERNAME with your actual GitHub
+     username (or custom domain if you have one).
+  2. Update <lastmod> dates whenever you make major changes
+     to a page — use YYYY-MM-DD format.
+  3. After deploying, submit this URL to Google Search Console:
+     https://uob-fed-dace-hcmc.github.io/sitemap.xml
+  ============================================================
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage — highest priority -->
+  <url>
+    <loc>https://uob-fed-dace-hcmc.github.io/index.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://uob-fed-dace-hcmc.github.io/about.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Members -->
+  <url>
+    <loc>https://uob-fed-dace-hcmc.github.io/members.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- News — updated frequently -->
+  <url>
+    <loc>https://uob-fed-dace-hcmc.github.io/news.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Opportunities -->
+  <url>
+    <loc>https://uob-fed-dace-hcmc.github.io/opportunities.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://uob-fed-dace-hcmc.github.io/contact.html</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
