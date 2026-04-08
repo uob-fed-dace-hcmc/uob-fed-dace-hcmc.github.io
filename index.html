@@ -1,95 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Home of the History, Conservation and Management Cluster at the University of Bath." />
-        <title>Home | History, Conservation & Management Cluster</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script defer src="js/main.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home of the History, Conservation and Management Cluster at the University of Bath." />
+    <meta name="author" content="History, Conservation and Management Cluster, Department of Architecture and Civil Engineering, University of Bath">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="conservation of historic buildings, conservation engineering, heritage conservation, built heritage, cultural heritage management, architectural conservation, historic structures, heritage engineering, structural conservation, structural assessment of historic buildings, earthen construction, structural stone, masonry structures, traditional materials, building pathology, moisture in buildings, durability of materials, sustainable construction, regenerative design, zero carbon construction, circular economy construction, low carbon materials, climate resilience in heritage, adaptive reuse of buildings, digital twins for heritage, human-centric digital twins, heritage digitalisation, BIM for heritage, FAIR data principles, smart heritage systems, MSc Conservation of Historic Buildings, postgraduate heritage conservation, conservation engineering education, University of Bath heritage research, civil engineering heritage, heritage research collaboration, industry partnerships heritage, heritage consultancy, conservation projects UK, University of Bath, Bath UK heritage, UK conservation engineering, heritage research UK">
+    <title>Home | History, Conservation & Management Cluster</title>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.ico">
 
-    <body>
-        <!-- Header -->
-        <header class="navbar">
-            <div class="logo">HCM Cluster</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="members.html">Members</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="news.html">News & Events</a></li>
-                    <li><a href="opportunities.html">Opportunities</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </nav>
-            <button id="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
-        </header>
+    <!-- Google Fonts: Playfair Display (headings) + Source Serif 4 (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
 
-        <!-- Hero Section -->
-        <section class="hero full-screen">
-            <div class="hero-content">
-                <h1>History, Conservation & Management Cluster</h1>
-                <p>Preserving the past, regenerating the future.</p>
-                <a href="about.html" class="btn">Learn More</a>
-            </div>
-        </section>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
 
-        <!-- Highlights Grid -->
-        <main class="content-grid">
-            <section class="grid-section">
-                <h2>Latest Highlights</h2>
-                <div class="grid">
-                    <article class="card">
-                        <img src="assets/images/news-placeholder.jpg" alt="News item">
-                        <h3>New MSc Cohort Begins</h3>
-                        <p>Welcoming our new students to the MSc in Conservation of Historic Buildings.</p>
-                        <a href="news.html">Read More</a>
-                    </article>
-                    <article class="card">
-                        <img src="assets/images/research-placeholder.jpg" alt="Research highlight">
-                        <h3>Research Highlight</h3>
-                        <p>Exploring regenerative approaches in heritage conservation.</p>
-                        <a href="research.html">Discover</a>
-                    </article>
-                        <article class="card">
-                        <img src="assets/images/event-placeholder.jpg" alt="Event">
-                        <h3>Upcoming Conference</h3>
-                        <p>Join us for ICMB25 in Guimarães, Portugal.</p>
-                        <a href="news.html">Learn More</a>
-                    </article>
-                </div>
-            </section>
-        </main>
+  <body>
+    <!-- ===================== HEADER ===================== -->
+    <header class="navbar" role="banner">
+      <a href="index.html" class="logo" aria-label="HCM Cluster home">HCM Cluster</a>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-grid">
-                <div>
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Follow Us</h4>
-                    <ul class="social">
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>&copy; 2025 University of Bath | History, Conservation & Management Cluster</p>
-                </div>
-            </div>
-        </footer>
-    </body>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="members.html" class="nav-link">Members</a></li>
+          <li><a href="news.html" class="nav-link">News </a></li>
+          <li><a href="opportunities.html" class="nav-link">Opportunities</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="theme-icon" aria-hidden="true">🌓</span>
+        <span class="theme-label">Theme</span>
+      </button>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero full-screen" aria-label="Welcome banner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">University of Bath</p>
+        <p class="hero-eyebrow">Department of Architecture &amp; Civil Engineering</p>
+        <h1>History, Conservation &amp; Management Cluster</h1>
+        <p class="hero-tagline">Preserving the past, regenerating the future.</p>
+        <a href="about.html" class="btn btn-primary">Learn More</a>
+      </div>
+    </section>
+
+    <!-- ===================== HIGHLIGHTS ===================== -->
+    <main id="main-content">
+      <section class="highlights-section" aria-labelledby="highlights-heading">
+        <div class="section-inner">
+          <h2 id="highlights-heading" class="section-title">Latest Highlights</h2>
+
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card-img-wrap">
+                <img
+                  src="assets/images/corsham_visit_2026.jpeg"
+                  alt="Academic staff and students examining a historic building facade"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <span class="card-tag">News</span>
+                <h3>Field visit to Corsham</h3>
+                <p>Students on the MSc in Conservation of Historic Buildings have started their conservation project. </p>
+                <a href="news.html" class="card-link" aria-label="Read more about the MSc conservation project">
+                  Read More <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img
+                  src="assets/images/bath_pultney_bridge.jpeg"
+                  alt="MSc in Conservation of Historic Buildings"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Call</span>
+                <h3>MSc in Conservation of Historic Buildings</h3>
+                <p>
+                  The call to apply for the MSc in Conservation of Historic Buildings is now open!
+                </p>
+                <a href="https://www.bath.ac.uk/courses/postgraduate-2026/taught-postgraduate-courses/msc-conservation-of-historic-buildings/" class="card-link" aria-label="Apply for the new version of the MSc in Conservation of Historic Buildings">
+                  Apply! <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-img-wrap">
+                <img
+                  src="assets/images/renew_conference_2026.png"
+                  alt="Flyer of RENEW Conference 2026 in Bath, UK"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <span class="card-tag">Event</span>
+                <h3>Upcoming Conference</h3>
+                <p>Join us for the Inaugural Conference on Regenerative Futures (RENEW 2026) in Bath, UK.</p>
+                <a href="https://renewconf.weebly.com/" class="card-link" aria-label="Learn more about RENEW 2026">
+                  Learn More <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">HCM Cluster</span>
+          <p>
+            History, Conservation &amp; Management Cluster<br />
+            Department of Architecture &amp; Civil Engineering<br />
+            University of Bath, Bath, BA2 7AY, UK
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="opportunities.html">Opportunities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true" aria-label="HCM Cluster on LinkedIn" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="footer-year">2025</span> University of Bath | Department of Architecture &amp; Civil Engineering |
+          History, Conservation &amp; Management Cluster
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===================== SCROLL TO TOP ===================== -->
+    <button
+      id="scroll-top"
+      class="scroll-top-btn"
+      aria-label="Scroll back to top"
+      hidden
+    >
+      <span aria-hidden="true">↑</span>
+    </button>
+  </body>
 </html>
