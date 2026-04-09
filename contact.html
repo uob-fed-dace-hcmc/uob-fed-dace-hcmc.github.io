@@ -82,26 +82,37 @@
     </head>
 
     <body>
-        <!-- Header -->
-        <header class="navbar">
-            <div class="logo">HCM Cluster</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="members.html">Members</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="news.html">News & Events</a></li>
-                    <li><a href="opportunities.html">Opportunities</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+        <!-- ===================== HEADER ===================== -->
+        <header class="navbar" role="banner">
+            <a href="index.html" class="logo" aria-label="HCM Cluster — go to homepage">HCM Cluster</a>
+
+            <nav aria-label="Primary navigation">
+                <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="members.html" class="nav-link">Members</a></li>
+                <li><a href="news.html" class="nav-link">News </a></li>
+                <li><a href="opportunities.html" class="nav-link">Opportunities</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+
+                <button
+                id="nav-toggle"
+                class="nav-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="nav-links"
+                >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
                 </button>
             </nav>
-            <button id="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <span class="theme-icon" aria-hidden="true">🌓</span>
+                <span class="theme-label">Theme</span>
+            </button>
         </header>
 
         <!-- Hero Section -->

@@ -1179,3 +1179,154 @@ th { background-color: var(--bg-alt); text-align: left; color: var(--accent-colo
   .opportunity-grid   { gap: 2.5rem; }
   .research-themes    { gap: 2rem; }
 }
+
+
+/* ==============================
+   ABOUT PAGE — additional styles
+============================== */
+
+/* Screen-reader-only utility (used for visually hidden headings) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Mission + Vision side by side */
+.about-mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-mv-grid { grid-template-columns: 1fr; }
+}
+
+/* Focus area cards with icon */
+.focus-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.focus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.focus-icon {
+  width: 56px;
+  height: 56px;
+  color: var(--accent-color);
+  background-color: var(--accent-subtle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  flex-shrink: 0;
+}
+
+.focus-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.focus-card h3 { margin-bottom: 0; }
+.focus-card p  { font-size: 0.95rem; max-width: none; margin: 0; }
+
+/* MSc Programme two-column section */
+.about-msc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .about-msc {
+    grid-template-columns: 1fr;
+  }
+  .about-msc-img { order: -1; } /* image above text on mobile */
+}
+
+.about-msc-text .card-tag { display: block; margin-bottom: 0.5rem; }
+.about-msc-text h2 { margin-bottom: 1rem; }
+.about-msc-text p  { max-width: none; }
+
+.msc-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.msc-features li {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  padding-left: 1.4rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.msc-features li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.about-msc-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+/* Research theme cards */
+.theme-card {
+  background-color: var(--bg-alt);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.5rem 1.75rem;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.theme-card:hover {
+  background-color: var(--accent-subtle);
+  transform: translateX(4px);
+}
+
+.theme-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.theme-card p  { font-size: 0.95rem; margin: 0; max-width: none; }
+
+/* CTA button group */
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
