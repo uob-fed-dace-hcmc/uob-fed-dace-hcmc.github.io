@@ -173,6 +173,45 @@ window.addEventListener("mousedown", () => {
 
 
 /* ==============================
+   8. DEADLINE BADGE URGENCY
+   Marks deadline-badge elements
+   as urgent when within 28 days
+============================== */
+
+(function markUrgentDeadlines() {
+  const badges = document.querySelectorAll(".deadline-badge[data-deadline]");
+  if (!badges.length) return;
+
+  const now     = new Date();
+  const URGENT  = 28; // days
+
+  badges.forEach((badge) => {
+    const deadlineStr = badge.getAttribute("data-deadline");
+    if (!deadlineStr) return;
+
+    const deadline = new Date(deadlineStr);
+    const daysLeft = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24));
+
+    if (daysLeft < 0) {
+      /* Past — mark closed */
+      badge.classList.add("deadline-badge--urgent");
+      const timeEl = badge.querySelector("time");
+      if (timeEl) timeEl.textContent += " (closed)";
+    } else if (daysLeft <= URGENT) {
+      /* Urgent — add days-remaining label */
+      badge.classList.add("deadline-badge--urgent");
+      const label = document.createElement("span");
+      label.textContent = daysLeft === 0
+        ? " — closes today!"
+        : ` — ${daysLeft} day${daysLeft === 1 ? "" : "s"} left`;
+      label.setAttribute("aria-hidden", "true");
+      badge.appendChild(label);
+    }
+  });
+})();
+
+
+/* ==============================
    7. CONTACT FORM
    Async Formspree submission with
    inline validation + status banners

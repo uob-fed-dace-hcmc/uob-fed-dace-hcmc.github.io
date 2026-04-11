@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Opportunities | History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath</title>
-        <meta name="description" content="The History, Conservation and Management Cluster at the Department of Architecture and Civil Engineering, University of Bath, advances research and education in the history, conservation, and management of historic buildings. Explore our MSc programme, research highlights, and collaboration opportunities." />
+        <meta name="description" content="Explore opportunities with the HCM Cluster at the Department of Architecture and Civil Engineering, University of Bath — including the MSc in Conservation of Historic Buildings, PhD studentships, postdoctoral positions, and collaboration partnerships." />
         <meta name="author" content="History, Conservation and Management Cluster, Department of Architecture and Civil Engineering, University of Bath">
         <meta name="robots" content="index, follow">
         <meta name="keywords" content="conservation of historic buildings, conservation engineering, heritage conservation, built heritage, cultural heritage management, architectural conservation, historic structures, heritage engineering, structural conservation, structural assessment of historic buildings, earthen construction, structural stone, masonry structures, traditional materials, building pathology, moisture in buildings, durability of materials, sustainable construction, regenerative design, zero carbon construction, circular economy construction, low carbon materials, climate resilience in heritage, adaptive reuse of buildings, digital twins for heritage, human-centric digital twins, heritage digitalisation, BIM for heritage, FAIR data principles, smart heritage systems, MSc Conservation of Historic Buildings, postgraduate heritage conservation, conservation engineering education, University of Bath heritage research, civil engineering heritage, heritage research collaboration, industry partnerships heritage, heritage consultancy, conservation projects UK, University of Bath, Bath UK heritage, UK conservation engineering, heritage research UK">
@@ -12,7 +12,7 @@
         <link rel="icon" type="image/png" href="assets/favicon/favicon.ico">
 
         <!-- Canonical URL — prevents duplicate-content penalties. -->
-        <link rel="canonical" href="https://uob-fed-dace-hcmc.github.io/index.html" />
+        <link rel="canonical" href="https://uob-fed-dace-hcmc.github.io/opportunities.html" />
 
         <!-- =====================================================
             SEO: Open Graph (Facebook, LinkedIn previews)
@@ -20,8 +20,8 @@
         <meta property="og:type"        content="website" />
         <meta property="og:site_name"   content="History, Conservation &amp; Management Cluster, Department of Architecture &amp; Civil Engineering, University of Bath" />
         <meta property="og:title"       content="History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath" />
-        <meta property="og:description" content="Advancing research and education in the history, conservation and management of historic buildings. Based at the Department of Architecture &amp; Civil Engineering, University of Bath." />
-        <meta property="og:url"         content="https://uob-fed-dace-hcmc.github.io/index.html" />
+        <meta property="og:description" content="Explore opportunities with the HCM Cluster — MSc programme, PhD studentships, postdoctoral positions, and collaboration partnerships." />
+        <meta property="og:url"         content="https://uob-fed-dace-hcmc.github.io/opportunities.html" />
         <meta property="og:image"       content="https://uob-fed-dace-hcmc.github.io/assets/images/og-image.jpg" />
         <meta property="og:image:alt"   content="History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath" />
         <meta property="og:locale"      content="en_GB" />
@@ -31,7 +31,7 @@
         ===================================================== -->
         <meta name="twitter:card"        content="summary_large_image" />
         <meta name="twitter:title"       content="History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath" />
-        <meta name="twitter:description" content="Advancing research and education in the history, conservation and management of historic buildings." />
+        <meta name="twitter:description" content="Explore opportunities with the HCM Cluster — MSc programme, PhD studentships, and collaboration partnerships." />
         <meta name="twitter:image"       content="https://uob-fed-dace-hcmc.github.io/assets/images/og-image.jpg" />
 
         <!-- =====================================================
@@ -115,97 +115,389 @@
             </button>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-text">
-                <h1>Opportunities</h1>
-                <p>Join our Cluster's collaborative initiatives and contribute to the future of conservation engineering and heritage research.</p>
-            </div>
+        <!-- ===================== PAGE HERO ===================== -->
+        <section class="hero-section" aria-label="Opportunities page banner">
+            <h1>Opportunities</h1>
+            <p>Join our Cluster — as a postgraduate student, doctoral researcher, postdoctoral fellow, or collaborating organisation. Explore current openings below and get in touch to find out more. </p>
         </section>
 
-        <!-- Main Content -->
-        <main class="content-grid">
+        <!-- ===================== MAIN CONTENT ===================== -->
+        <main id="main-content" class="page-wrapper">
 
-            <!-- Introduction -->
-            <section class="intro">
-                <h2>Get Involved</h2>
-                <p>The History, Conservation & Management Cluster fosters interdisciplinary collaboration among researchers, practitioners, and students. Whether you are looking to engage in a research project, pursue a PhD, or collaborate on new conservation initiatives, we invite you to explore the opportunities below.</p>
+            <!--
+            ================================================================
+                HOW TO ADD A NEW OPPORTUNITY
+            ================================================================
+                Each category below has its own <section> with an
+                aria-labelledby heading and an .opp-grid inside.
+
+                To add an opportunity:
+                1. Copy one of the <article class="opp-card"> blocks.
+                2. Update the tag, title, description, deadlines, and link.
+                3. Remove the <div class="opp-empty-state"> for that section
+                    if it was showing (it should only show when there are NO
+                    active cards in that grid).
+                4. To mark an opportunity as CLOSED, add the attribute
+                    data-status="closed" to the <article> element — the CSS
+                    will grey it out automatically.
+
+                Deadline badge colours:
+                — Default (accent/gold): normal deadline
+                — Add class "deadline-badge--urgent" for deadlines within
+                    4 weeks — the badge turns red automatically via JS.
+            ================================================================
+            -->
+
+            <!-- ── QUICK-JUMP NAV ─────────────────────────────────── -->
+            <nav class="opp-jump-nav" aria-label="Jump to opportunity category">
+                <span class="opp-jump-label">Jump to:</span>
+                <ul>
+                <li><a href="#postgraduate">Postgraduate Study</a></li>
+                <li><a href="#phd">PhD Studentships</a></li>
+                <li><a href="#postdoc">Postdoctoral Positions</a></li>
+                <li><a href="#collaboration">Collaboration &amp; Partnerships</a></li>
+                </ul>
+            </nav>
+
+            <!-- ══════════════════════════════════════════════════════
+                SECTION 1 — POSTGRADUATE STUDY
+                Currently active: MSc in Conservation of Historic Buildings
+            ══════════════════════════════════════════════════════════ -->
+            <section id="postgraduate" aria-labelledby="postgrad-heading">
+                <h2 id="postgrad-heading" class="section-title">Postgraduate Study</h2>
+
+                <div class="opp-grid">
+
+                <!--
+                    ── ACTIVE OPPORTUNITY ──────────────────────────────
+                    MSc in Conservation of Historic Buildings
+                    To update deadlines: edit the two <time> elements and
+                    their datetime="" attributes below.
+                    To mark as closed: add data-status="closed" to <article>.
+                -->
+                <article class="opp-card opp-card--featured" itemscope itemtype="https://schema.org/EducationEvent">
+                    <div class="opp-card-header">
+                    <span class="card-tag">MSc Programme</span>
+                    <span class="opp-status opp-status--open">Now Open</span>
+                    </div>
+
+                    <h3 itemprop="name">MSc in Conservation of Historic Buildings</h3>
+                    <p class="opp-org" itemprop="organizer">
+                    Department of Architecture &amp; Civil Engineering,
+                    University of Bath
+                    </p>
+
+                    <p itemprop="description">
+                    Our flagship postgraduate programme trains conservation
+                    engineers, architects, and heritage managers to repair,
+                    adapt, and manage historic buildings in the 21st century.
+                    The MSc combines structural engineering, architectural
+                    history, materials science, and heritage policy through
+                    studio work, field visits, and a research dissertation.
+                    </p>
+
+                    <ul class="opp-highlights">
+                    <li>Full-time, one year</li>
+                    <li>Practice-led with live conservation projects</li>
+                    <li>Taught by active researchers in heritage conservation</li>
+                    <li>Graduates work in conservation practices, Historic England, the National Trust, and academia</li>
+                    </ul>
+
+                    <!-- Deadline badges -->
+                    <div class="opp-deadlines" aria-label="Application deadlines">
+                    <div class="deadline-item">
+                        <span class="deadline-label">Home deadline</span>
+                        <span
+                        class="deadline-badge"
+                        data-deadline="2026-08-31"
+                        aria-label="Home application deadline: 31 August 2026"
+                        >
+                        <time datetime="2026-08-31">31 August 2026</time>
+                        </span>
+                    </div>
+                    <div class="deadline-item">
+                        <span class="deadline-label">Overseas deadline</span>
+                        <span
+                        class="deadline-badge"
+                        data-deadline="2026-07-31"
+                        aria-label="Overseas application deadline: 31 July 2026"
+                        >
+                        <time datetime="2026-07-31">31 July 2026</time>
+                        </span>
+                    </div>
+                    </div>
+
+                    <div class="opp-card-actions">
+                    <a
+                        href="https://www.bath.ac.uk/courses/postgraduate-2026/taught-postgraduate-courses/msc-conservation-of-historic-buildings/"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Apply for the MSc in Conservation of Historic Buildings (opens University of Bath website)"
+                    >Apply Now</a>
+                    <a
+                        href="https://www.bath.ac.uk/courses/postgraduate-2026/taught-postgraduate-courses/msc-conservation-of-historic-buildings/"
+                        class="btn btn-outline"
+                        target="_blank"
+                    >Learn About the Programme</a>
+                    </div>
+                </article>
+
+                <!--
+                    ── TO ADD ANOTHER POSTGRADUATE OPPORTUNITY ──────────
+                    Copy the <article class="opp-card"> block below,
+                    fill in the details, and remove the opp-empty-state div.
+
+                <article class="opp-card">
+                    <div class="opp-card-header">
+                    <span class="card-tag">CATEGORY TAG</span>
+                    <span class="opp-status opp-status--open">Now Open</span>
+                    </div>
+                    <h3>Opportunity Title</h3>
+                    <p class="opp-org">Organisation / Department</p>
+                    <p>Description of the opportunity.</p>
+                    <div class="opp-deadlines">
+                    <div class="deadline-item">
+                        <span class="deadline-label">Deadline</span>
+                        <span class="deadline-badge" data-deadline="YYYY-MM-DD">
+                        <time datetime="YYYY-MM-DD">DD Month YYYY</time>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="opp-card-actions">
+                    <a href="#" class="btn btn-primary">Apply / Learn More</a>
+                    </div>
+                </article>
+                -->
+
+                </div><!-- /.opp-grid -->
             </section>
 
-            <!-- Research Opportunities -->
-            <section class="opportunity-grid grid-3">
-                <!-- Opportunity 1 -->
-                <article class="card">
-                    <img src="images/opportunity-placeholder-1.jpg" alt="PhD research image" class="card-img">
-                    <div class="card-content">
-                        <h3>PhD Studentship: Regenerative Post-Conflict Heritage Reconstruction</h3>
-                        <p>A 2025/26 URSA-funded PhD project focusing on integrating debris re-use, traditional building techniques, and community-centred approaches to rebuild heritage in post-conflict settings.</p>
-                        <p class="date">Open for applications: Spring 2025</p>
-                        <a href="#" class="btn">Learn more</a>
-                    </div>
-                </article>
 
-                <!-- Opportunity 2 -->
-                <article class="card">
-                    <img src="images/opportunity-placeholder-2.jpg" alt="Stone research image" class="card-img">
-                    <div class="card-content">
-                        <h3>PhD Studentship: Scaling Up Structural Stone for a Zero-Carbon Future</h3>
-                        <p>A multidisciplinary PhD exploring how to scale up demand and production of structural stone in the UK through sustainable, vernacular, and regenerative practices.</p>
-                        <p class="date">Supervisors: Dr. Jiménez Rios, Dr. Hawkins, Prof. Darby</p>
-                        <a href="#" class="btn">Learn more</a>
-                    </div>
-                </article>
+            <!-- ══════════════════════════════════════════════════════
+                SECTION 2 — PhD STUDENTSHIPS
+            ══════════════════════════════════════════════════════════ -->
+            <section id="phd" aria-labelledby="phd-heading">
+                <h2 id="phd-heading" class="section-title">PhD Studentships</h2>
 
-                <!-- Opportunity 3 -->
-                <article class="card">
-                    <img src="images/opportunity-placeholder-3.jpg" alt="Earthen materials research image" class="card-img">
-                    <div class="card-content">
-                        <h3>PhD Studentship: Recyclability of Earthen Construction Materials</h3>
-                        <p>A 2025/26 URSA-funded research project to quantify and assess the recyclability of earthen construction materials to support circular economy practices.</p>
-                        <p class="date">Applications open: Spring 2025</p>
-                        <a href="#" class="btn">Learn more</a>
-                    </div>
-                </article>
+                <div class="opp-grid">
 
-                <!-- Opportunity 4 -->
-                <article class="card">
-                    <img src="images/opportunity-placeholder-4.jpg" alt="Summer research student" class="card-img">
-                    <div class="card-content">
-                        <h3>Summer Bursary Project: Reeco-Soil</h3>
-                        <p>A summer research bursary exploring regenerative retrofitting via ecologically active soil structures, aligning with RENEW's principles of regenerative design and engineering.</p>
-                        <p class="date">Next call: March 2025</p>
-                        <a href="#" class="btn">Learn more</a>
+                <!--
+                    ── EMPTY STATE ──────────────────────────────────────
+                    Remove this block and add an opp-card when a PhD
+                    studentship becomes available.
+                -->
+                <div class="opp-empty-state">
+                    <div class="opp-empty-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
                     </div>
-                </article>
+                    <h3>No PhD Studentships Currently Open</h3>
+                    <p>
+                    We regularly offer funded PhD studentships in conservation
+                    engineering, heritage management, and related fields.
+                    Follow us on
+                    <a href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    or <a href="contact.html">sign up to our mailing list</a>
+                    to be notified when new positions become available.
+                    </p>
+                </div>
 
-                <!-- Opportunity 5 -->
-                <article class="card">
-                    <img src="images/opportunity-placeholder-5.jpg" alt="Collaborative research" class="card-img">
-                    <div class="card-content">
-                        <h3>Collaborate with Us</h3>
-                        <p>We welcome partnerships with academic institutions, heritage organisations, and industry to co-develop research proposals, fieldwork initiatives, and conservation projects.</p>
-                        <a href="contact.html" class="btn">Get in touch</a>
-                    </div>
-                </article>
+                <!--
+                    ── TO ADD A PhD OPPORTUNITY ─────────────────────────
+                    Copy this template, fill in the details, and
+                    delete the opp-empty-state div above.
 
-                <!-- Opportunity 6 -->
-                <article class="card">
-                    <img src="images/opportunity-placeholder-6.jpg" alt="Student internship image" class="card-img">
-                    <div class="card-content">
-                        <h3>Student Internships and Placements</h3>
-                        <p>Undergraduate and MSc students can gain hands-on experience by contributing to active Cluster research projects or industry collaborations in structural conservation.</p>
-                        <p class="date">Rolling applications</p>
-                        <a href="#" class="btn">Find out more</a>
+                <article class="opp-card">
+                    <div class="opp-card-header">
+                    <span class="card-tag">PhD Studentship</span>
+                    <span class="opp-status opp-status--open">Now Open</span>
+                    </div>
+                    <h3>PhD Title</h3>
+                    <p class="opp-org">Department of Architecture & Civil Engineering, University of Bath</p>
+                    <p>Description of the project, funding body, and supervisors.</p>
+                    <ul class="opp-highlights">
+                    <li>Funding: e.g. UKRI / EPSRC / Industrial partner</li>
+                    <li>Duration: 3.5 years full-time</li>
+                    <li>Supervisors: Dr X, Prof Y</li>
+                    </ul>
+                    <div class="opp-deadlines">
+                    <div class="deadline-item">
+                        <span class="deadline-label">Application deadline</span>
+                        <span class="deadline-badge" data-deadline="YYYY-MM-DD">
+                        <time datetime="YYYY-MM-DD">DD Month YYYY</time>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="opp-card-actions">
+                    <a href="#" class="btn btn-primary">Apply</a>
+                    <a href="#" class="btn btn-outline">Project Details</a>
                     </div>
                 </article>
+                -->
+
+                </div><!-- /.opp-grid -->
             </section>
 
-            <!-- Call to Action -->
-            <section class="cta-section">
-                <h2>Interested in Joining Us?</h2>
-                <p>If you are passionate about heritage, sustainability, and structural conservation, we'd love to hear from you. Visit our <a href="contact.html">Contact page</a> to reach out about collaboration, research supervision, or student placements.</p>
-                <a href="contact.html" class="btn primary">Contact Us</a>
+
+            <!-- ══════════════════════════════════════════════════════
+                SECTION 3 — POSTDOCTORAL POSITIONS
+            ══════════════════════════════════════════════════════════ -->
+            <section id="postdoc" aria-labelledby="postdoc-heading">
+                <h2 id="postdoc-heading" class="section-title">Postdoctoral Positions</h2>
+
+                <div class="opp-grid">
+
+                <!--
+                    ── EMPTY STATE ──────────────────────────────────────
+                    Remove this block and add an opp-card when a postdoc
+                    position becomes available.
+                -->
+                <div class="opp-empty-state">
+                    <div class="opp-empty-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    </div>
+                    <h3>No Postdoctoral Positions Currently Advertised</h3>
+                    <p>
+                    We welcome speculative enquiries from postdoctoral researchers
+                    whose work aligns with our research themes. Please
+                    <a href="contact.html">get in touch</a> with a CV and a brief
+                    outline of your research interests.
+                    </p>
+                </div>
+
+                <!--
+                    ── TO ADD A POSTDOC OPPORTUNITY ─────────────────────
+                <article class="opp-card">
+                    <div class="opp-card-header">
+                    <span class="card-tag">Postdoctoral Position</span>
+                    <span class="opp-status opp-status--open">Now Open</span>
+                    </div>
+                    <h3>Position Title</h3>
+                    <p class="opp-org">Department of Architecture & Civil Engineering, University of Bath</p>
+                    <p>Description of the role, project, and requirements.</p>
+                    <ul class="opp-highlights">
+                    <li>Duration: e.g. 24 months</li>
+                    <li>Funding: e.g. AHRC / Innovate UK</li>
+                    <li>PI: Prof X</li>
+                    </ul>
+                    <div class="opp-deadlines">
+                    <div class="deadline-item">
+                        <span class="deadline-label">Application deadline</span>
+                        <span class="deadline-badge" data-deadline="YYYY-MM-DD">
+                        <time datetime="YYYY-MM-DD">DD Month YYYY</time>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="opp-card-actions">
+                    <a href="#" class="btn btn-primary">Apply</a>
+                    </div>
+                </article>
+                -->
+
+                </div><!-- /.opp-grid -->
             </section>
+
+
+            <!-- ══════════════════════════════════════════════════════
+                SECTION 4 — COLLABORATION & PARTNERSHIPS
+            ══════════════════════════════════════════════════════════ -->
+            <section id="collaboration" aria-labelledby="collab-heading">
+                <h2 id="collab-heading" class="section-title">Collaboration &amp; Partnerships</h2>
+
+                <div class="opp-grid opp-grid--collab">
+
+                <!-- Collaboration card 1 — Research partnerships (always visible) -->
+                <article class="opp-card opp-card--collab">
+                    <div class="opp-card-header">
+                    <span class="card-tag">Research Collaboration</span>
+                    <span class="opp-status opp-status--open">Always Open</span>
+                    </div>
+                    <h3>Joint Research Projects</h3>
+                    <p>
+                    We welcome proposals for joint research with academic
+                    institutions, heritage organisations, and industry partners.
+                    Our current themes include structural conservation, digital
+                    heritage, regenerative design, and heritage management —
+                    but we are open to new directions.
+                    </p>
+                    <div class="opp-card-actions">
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                    <a href="about.html#themes-heading" class="btn btn-outline">Our Research Themes</a>
+                    </div>
+                </article>
+
+                <!-- Collaboration card 2 — Industry & heritage bodies (always visible) -->
+                <article class="opp-card opp-card--collab">
+                    <div class="opp-card-header">
+                    <span class="card-tag">Industry &amp; Heritage Partners</span>
+                    <span class="opp-status opp-status--open">Always Open</span>
+                    </div>
+                    <h3>Industry &amp; Heritage Organisation Partnerships</h3>
+                    <p>
+                    We collaborate with conservation practices, heritage bodies,
+                    contractors, and local authorities on consultancy, knowledge
+                    exchange, CPD workshops, and co-funded research. If you have
+                    a project or challenge we could help address, we would love
+                    to hear from you.
+                    </p>
+                    <div class="opp-card-actions">
+                    <a href="contact.html" class="btn btn-primary">Discuss a Partnership</a>
+                    </div>
+                </article>
+
+                <!--
+                    ── TO ADD A SPECIFIC COLLABORATION CALL ─────────────
+                <article class="opp-card">
+                    <div class="opp-card-header">
+                    <span class="card-tag">Funded Call</span>
+                    <span class="opp-status opp-status--open">Open</span>
+                    </div>
+                    <h3>Call Title</h3>
+                    <p class="opp-org">Funding body / organisation</p>
+                    <p>Description of the call or project.</p>
+                    <div class="opp-deadlines">
+                    <div class="deadline-item">
+                        <span class="deadline-label">Expression of interest deadline</span>
+                        <span class="deadline-badge" data-deadline="YYYY-MM-DD">
+                        <time datetime="YYYY-MM-DD">DD Month YYYY</time>
+                        </span>
+                    </div>
+                    </div>
+                    <div class="opp-card-actions">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </article>
+                -->
+
+                </div><!-- /.opp-grid -->
+            </section>
+
+
+            <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+            <section class="cta-section" aria-labelledby="opp-cta-heading">
+                <h2 id="opp-cta-heading">Stay Connected</h2>
+                <p>
+                Follow us on LinkedIn and check back here regularly for new
+                openings. If you have a specific enquiry not covered above,
+                our team is always happy to hear from you.
+                </p>
+                <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a
+                    href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true"
+                    class="btn btn-outline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Follow on LinkedIn</a>
+                </div>
+            </section>
+
         </main>
 
         <!-- ===================== FOOTER ===================== -->
@@ -236,7 +528,7 @@
                 <h4>Connect</h4>
                 <ul>
                     <li>
-                    <a href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true" aria-label="HCM Cluster on LinkedIn" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true" aria-label="HCM Cluster on LinkedIn" rel="noopener noreferrer" target="_blank">
                         LinkedIn
                     </a>
                     </li>
