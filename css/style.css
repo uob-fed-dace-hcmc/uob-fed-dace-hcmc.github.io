@@ -1577,3 +1577,197 @@ th { background-color: var(--bg-alt); text-align: left; color: var(--accent-colo
   margin-top: 0.6rem;
   display: inline-flex;
 }
+
+
+/* ==============================
+   CONTACT PAGE — additional styles
+============================== */
+
+/* Contact detail list with icons */
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.contact-detail-icon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background-color: var(--accent-subtle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  padding: 8px;
+  margin-top: 1px;
+}
+
+.contact-detail-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-details strong {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 0.1rem;
+}
+
+/* What can we help with */
+.contact-topics {
+  background-color: var(--bg-alt);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact-topics h3 {
+  font-size: 0.9rem;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.topics-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.topics-list li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.topics-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* Form field validation error text */
+.field-error {
+  display: block;
+  font-size: 0.82rem;
+  color: #c0392b;
+  margin-top: 0.3rem;
+  min-height: 1.2em;
+  font-family: var(--font-ui);
+}
+
+[data-theme="dark"] .field-error { color: #e57373; }
+
+/* Input invalid state */
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown) {
+  border-color: #c0392b;
+}
+
+[data-theme="dark"] input:invalid:not(:placeholder-shown),
+[data-theme="dark"] textarea:invalid:not(:placeholder-shown) {
+  border-color: #e57373;
+}
+
+/* Submit button spinner */
+.btn-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.form-actions { align-items: flex-start; }
+
+/* Success / error banners */
+.form-banner {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.form-banner--success {
+  background-color: #eaf7f0;
+  border-left: 4px solid #27ae60;
+  color: #1e6e3f;
+}
+
+.form-banner--error {
+  background-color: #fdf0ef;
+  border-left: 4px solid #c0392b;
+  color: #7b1e17;
+}
+
+[data-theme="dark"] .form-banner--success {
+  background-color: rgba(39, 174, 96, 0.12);
+  color: #6fcf97;
+}
+
+[data-theme="dark"] .form-banner--error {
+  background-color: rgba(192, 57, 43, 0.12);
+  color: #e57373;
+}
+
+/* Google Maps embed — responsive wrapper */
+.map-embed-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  /* 16:6 aspect ratio — a wide but not too-tall map */
+  aspect-ratio: 16 / 6;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .map-embed-wrap { aspect-ratio: 4 / 3; }
+}
+
+.map-embed-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius-md);
+}

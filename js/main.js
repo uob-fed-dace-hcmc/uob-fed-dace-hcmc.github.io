@@ -170,3 +170,104 @@ window.addEventListener("keydown", function handleFirstTab(e) {
 window.addEventListener("mousedown", () => {
   document.body.classList.remove("user-is-tabbing");
 });
+
+
+/* ==============================
+   7. CONTACT FORM
+   Async Formspree submission with
+   inline validation + status banners
+============================== */
+
+(function initContactForm() {
+  const form       = document.getElementById("contact-form");
+  if (!form) return;
+
+  const submitBtn   = document.getElementById("submit-btn");
+  const btnLabel    = submitBtn?.querySelector(".btn-label");
+  const btnSpinner  = submitBtn?.querySelector(".btn-spinner");
+  const successMsg  = document.getElementById("form-success");
+  const errorMsg    = document.getElementById("form-error");
+  const replySpan   = document.getElementById("reply-email");
+
+  /* -- Inline validation helpers -- */
+  function showError(inputId, message) {
+    const el = document.getElementById(inputId + "-error");
+    if (el) el.textContent = message;
+  }
+
+  function clearError(inputId) {
+    const el = document.getElementById(inputId + "-error");
+    if (el) el.textContent = "";
+  }
+
+  function validateField(input) {
+    if (!input) return true;
+    const id = input.id;
+    if (input.required && !input.value.trim()) {
+      showError(id, "This field is required.");
+      return false;
+    }
+    if (input.type === "email" && input.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
+      showError(id, "Please enter a valid email address.");
+      return false;
+    }
+    clearError(id);
+    return true;
+  }
+
+  /* Validate on blur for each required field */
+  ["name", "email", "subject", "message"].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("blur", () => validateField(el));
+      el.addEventListener("input", () => clearError(id));
+    }
+  });
+
+  /* -- Form submission -- */
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    /* Validate all required fields before sending */
+    const fields = ["name", "email", "subject", "message"].map((id) =>
+      document.getElementById(id)
+    );
+    const valid = fields.map(validateField).every(Boolean);
+    if (!valid) {
+      fields.find((f) => f && !f.value.trim())?.focus();
+      return;
+    }
+
+    /* Show loading state */
+    submitBtn.disabled = true;
+    if (btnLabel)  btnLabel.textContent = "Sending…";
+    if (btnSpinner) btnSpinner.hidden = false;
+
+    const emailInput = document.getElementById("email");
+    if (replySpan && emailInput) replySpan.textContent = emailInput.value;
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        form.reset();
+        if (successMsg) successMsg.hidden = false;
+        if (errorMsg)   errorMsg.hidden   = true;
+        successMsg?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      } else {
+        throw new Error("Non-OK response");
+      }
+    } catch {
+      if (errorMsg)   errorMsg.hidden   = false;
+      if (successMsg) successMsg.hidden = true;
+    } finally {
+      submitBtn.disabled = false;
+      if (btnLabel)  btnLabel.textContent = "Send Message";
+      if (btnSpinner) btnSpinner.hidden = true;
+    }
+  });
+})();
