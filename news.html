@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>News | History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath</title>
-        <meta name="description" content="The History, Conservation and Management Cluster at the Department of Architecture and Civil Engineering, University of Bath, advances research and education in the history, conservation, and management of historic buildings. Explore our MSc programme, research highlights, and collaboration opportunities." />
+        <meta name="description" content="Latest news, events, and updates from the History, Conservation and Management Cluster at the Department of Architecture and Civil Engineering, University of Bath — including conferences, research publications, MSc projects, and partnership announcements." />
         <meta name="author" content="History, Conservation and Management Cluster, Department of Architecture and Civil Engineering, University of Bath">
         <meta name="robots" content="index, follow">
         <meta name="keywords" content="conservation of historic buildings, conservation engineering, heritage conservation, built heritage, cultural heritage management, architectural conservation, historic structures, heritage engineering, structural conservation, structural assessment of historic buildings, earthen construction, structural stone, masonry structures, traditional materials, building pathology, moisture in buildings, durability of materials, sustainable construction, regenerative design, zero carbon construction, circular economy construction, low carbon materials, climate resilience in heritage, adaptive reuse of buildings, digital twins for heritage, human-centric digital twins, heritage digitalisation, BIM for heritage, FAIR data principles, smart heritage systems, MSc Conservation of Historic Buildings, postgraduate heritage conservation, conservation engineering education, University of Bath heritage research, civil engineering heritage, heritage research collaboration, industry partnerships heritage, heritage consultancy, conservation projects UK, University of Bath, Bath UK heritage, UK conservation engineering, heritage research UK">
@@ -12,7 +12,7 @@
         <link rel="icon" type="image/png" href="assets/favicon/favicon.ico">
 
         <!-- Canonical URL — prevents duplicate-content penalties. -->
-        <link rel="canonical" href="https://uob-fed-dace-hcmc.github.io/index.html" />
+        <link rel="canonical" href="https://uob-fed-dace-hcmc.github.io/news.html" />
 
         <!-- =====================================================
             SEO: Open Graph (Facebook, LinkedIn previews)
@@ -20,8 +20,8 @@
         <meta property="og:type"        content="website" />
         <meta property="og:site_name"   content="History, Conservation &amp; Management Cluster, Department of Architecture &amp; Civil Engineering, University of Bath" />
         <meta property="og:title"       content="History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath" />
-        <meta property="og:description" content="Advancing research and education in the history, conservation and management of historic buildings. Based at the Department of Architecture &amp; Civil Engineering, University of Bath." />
-        <meta property="og:url"         content="https://uob-fed-dace-hcmc.github.io/index.html" />
+        <meta property="og:description" content="Latest news, events, and research updates from the HCM Cluster at the Department of Architecture &amp; Civil Engineering, University of Bath." />
+        <meta property="og:url"         content="https://uob-fed-dace-hcmc.github.io/news.html" />
         <meta property="og:image"       content="https://uob-fed-dace-hcmc.github.io/assets/images/og-image.jpg" />
         <meta property="og:image:alt"   content="History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath" />
         <meta property="og:locale"      content="en_GB" />
@@ -31,7 +31,7 @@
         ===================================================== -->
         <meta name="twitter:card"        content="summary_large_image" />
         <meta name="twitter:title"       content="History, Conservation &amp; Management Cluster | Department of Architecture &amp; Civil Engineering | University of Bath" />
-        <meta name="twitter:description" content="Advancing research and education in the history, conservation and management of historic buildings." />
+        <meta name="twitter:description" content="Latest news, events, and research updates from the HCM Cluster at the Department of Architecture &amp; Civil Engineering, University of Bath." />
         <meta name="twitter:image"       content="https://uob-fed-dace-hcmc.github.io/assets/images/og-image.jpg" />
 
         <!-- =====================================================
@@ -47,7 +47,36 @@
         "alternateName": "HCM Cluster",
         "url": "https://uob-fed-dace-hcmc.github.io/",
         "logo": "https://uob-fed-dace-hcmc.github.io/assets/images/og-image.jpg",
-        "description": "A research cluster at the Department of Architecture and Civil Engineering, University of Bath, advancing knowledge in the history, conservation and management of historic buildings.",
+        "description": "Latest news, events, and research updates from the History, Conservation and Management Cluster at the Department of Architecture and Civil Engineering, University of Bath.",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                "@type": "Event",
+                "name": "RENEW 2026 — Inaugural Conference on Regenerative Futures",
+                "startDate": "2026-06-02",
+                "endDate": "2026-06-03",
+                "location": {
+                    "@type": "Place",
+                    "name": "University of Bath",
+                    "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Bath",
+                    "addressCountry": "GB"
+                    }
+                },
+                "url": "https://renewconf.weebly.com/",
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Centre for Regenerative Design & Engineering (RENEW), University of Bath"
+                }
+                }
+            }
+            ]
+        },
         "parentOrganization": {
             "@type": "CollegeOrUniversity",
             "name": "University of Bath",
@@ -115,96 +144,217 @@
             </button>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-text">
-                <h1>News & Updates</h1>
-            <p>Stay informed about our latest projects, collaborations, and achievements.</p>
-            </div>
+        <!-- ===================== PAGE HERO ===================== -->
+        <section class="hero-section" aria-label="News and events page banner">
+            <h1>News &amp; Events</h1>
+            <p>Stay up to date with the latest research, events, and announcements from the History, Conservation &amp; Management Cluster. </p>
         </section>
 
         <!-- Main Content -->
-        <main class="content-grid">
-            <!-- Intro Section -->
-            <section class="intro">
-                <h2>Latest Announcements</h2>
-                <p>The History, Conservation & Management Cluster is committed to advancing research and collaboration in the conservation of built heritage. Here you can find the latest updates, publications, and news from our members.</p>
+        <!-- ===================== MAIN CONTENT ===================== -->
+        <main id="main-content" class="page-wrapper">
+
+            <!--
+            ================================================================
+                HOW TO ADD A NEWS ITEM
+            ================================================================
+                Each news item is an <article class="news-card"> inside the .news-feed container. Items are displayed in the order they appear in the HTML — put the most recent at the top.
+
+                ANATOMY OF A NEWS CARD:
+                ┌─────────────────────────────────────────────────┐
+                │ <article class="news-card"                      │
+                │          data-category="CATEGORY">              │
+                │   <div class="news-card-img"> (optional photo)  │
+                │   <div class="news-card-body">                  │
+                │     <div class="news-card-meta">                │
+                │       <span class="card-tag">CATEGORY TAG</span>│
+                │       <time datetime="YYYY-MM-DD">Date</time>   │
+                │     <h3>Title</h3>                              │
+                │     <p>Summary text</p>                         │
+                │     <a href="…" class="card-link">Read more</a> │
+                └─────────────────────────────────────────────────┘
+
+                CATEGORY VALUES (used by the filter buttons):
+                data-category="event"        → Events & Conferences
+                data-category="news"         → Cluster News
+                data-category="publication"  → Publications
+                data-category="msc"          → MSc Programme
+
+                FEATURED CARD:
+                Add class "news-card--featured" to an <article> to give it
+                a full-width hero treatment. Only use for one card at a time.
+
+                IMAGE (optional):
+                Add <div class="news-card-img"> before news-card-body.
+                Without an image the card renders as a text-only list item.
+            ================================================================
+            -->
+
+            <!-- ── FILTER BAR ─────────────────────────────────────── -->
+            <div class="news-filter-bar" role="group" aria-label="Filter news by category">
+                <button class="news-filter-btn active" data-filter="all">All</button>
+                <button class="news-filter-btn" data-filter="event">Events &amp; Conferences</button>
+                <button class="news-filter-btn" data-filter="news">Cluster News</button>
+                <button class="news-filter-btn" data-filter="publication">Publications</button>
+                <button class="news-filter-btn" data-filter="msc">MSc Programme</button>
+            </div>
+
+            <!-- ── NEWS FEED ─────────────────────────────────────── -->
+            <div class="news-feed" id="news-feed" aria-live="polite" aria-label="News articles">
+
+                <!--
+                ══════════════════════════════════════════════════════
+                ACTIVE ITEM — RENEW 2026 Conference (FEATURED)
+                ══════════════════════════════════════════════════════
+                -->
+                <article
+                class="news-card news-card--featured"
+                data-category="event"
+                itemscope
+                itemtype="https://schema.org/Event"
+                >
+                <div class="news-card-img">
+                    <img
+                    src="assets/images/renew_conference_2026.png"
+                    alt="RENEW 2026 — Inaugural Conference on Regenerative Futures, University of Bath, 2–3 June 2026"
+                    width="900"
+                    height="500"
+                    loading="eager"
+                    itemprop="image"
+                    />
+                </div>
+                <div class="news-card-body">
+                    <div class="news-card-meta">
+                    <span class="card-tag">Event</span>
+                    <time datetime="2026-06-02" itemprop="startDate">2–3 June 2026</time>
+                    </div>
+                    <h3 itemprop="name">
+                    RENEW 2026 — Inaugural Conference on Regenerative Futures
+                    </h3>
+                    <p class="news-card-location" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                    <span aria-hidden="true">📍</span>
+                    <span itemprop="name">University of Bath, Bath, UK</span>
+                    </p>
+                    <p itemprop="description">
+                    The Centre for Regenerative Design &amp; Engineering (RENEW) at the
+                    University of Bath is hosting its inaugural conference on
+                    Regenerative Futures: Engineering, Design, Systems and Communities
+                    on 2–3 June 2026. The conference brings together scholars,
+                    practitioners, and policymakers to debate and advance regenerative
+                    design and engineering with societal, cultural, ecological, and
+                    economic co-impact.
+                    </p>
+                    <p>
+                    Featured speakers include MP Sarah Gibson, regenerative strategist
+                    Jenny Anderson, Chris Wise (Expedition Engineering), and leading
+                    academics from UCL, RENEW, and partner institutions. Participants
+                    are invited to submit extended abstracts rather than full papers,
+                    with an emphasis on debate, curated talks, and active engagement.
+                    </p>
+
+                    <!-- Key dates summary -->
+                    <ul class="news-card-dates">
+                    <li><strong>Final abstract deadline:</strong> 30 April 2026</li>
+                    <li><strong>Registration deadline:</strong> 1 May 2026</li>
+                    <li><strong>Conference dates:</strong> 2–3 June 2026</li>
+                    </ul>
+
+                    <div class="news-card-actions">
+                    <a
+                        href="https://renewconf.weebly.com/"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit the RENEW 2026 conference website (opens in new tab)"
+                        itemprop="url"
+                    >Conference Website</a>
+                    <a
+                        href="https://renewconf.weebly.com/participation.html"
+                        class="btn btn-outline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Submit an abstract for RENEW 2026 (opens in new tab)"
+                    >Submit an Abstract</a>
+                    </div>
+                </div>
+                </article>
+
+                <!--
+                ══════════════════════════════════════════════════════
+                TO ADD MORE NEWS ITEMS — copy the template below,
+                fill in the details, and paste ABOVE this comment
+                (most recent items should appear first).
+
+                TEXT-ONLY CARD (no image):
+                ─────────────────────────
+                <article class="news-card" data-category="CATEGORY">
+                    <div class="news-card-body">
+                    <div class="news-card-meta">
+                        <span class="card-tag">Tag Label</span>
+                        <time datetime="YYYY-MM-DD">DD Month YYYY</time>
+                    </div>
+                    <h3>News Title</h3>
+                    <p>Short summary of the news item.</p>
+                    <a href="#" class="card-link" aria-label="Read more about [Title]">
+                        Read More <span aria-hidden="true">→</span>
+                    </a>
+                    </div>
+                </article>
+
+                CARD WITH IMAGE:
+                ─────────────────────────
+                <article class="news-card" data-category="CATEGORY">
+                    <div class="news-card-img">
+                    <img src="assets/images/YOUR-IMAGE.jpg"
+                        alt="Descriptive alt text"
+                        width="600" height="338" loading="lazy" />
+                    </div>
+                    <div class="news-card-body">
+                    <div class="news-card-meta">
+                        <span class="card-tag">Tag Label</span>
+                        <time datetime="YYYY-MM-DD">DD Month YYYY</time>
+                    </div>
+                    <h3>News Title</h3>
+                    <p>Short summary of the news item.</p>
+                    <a href="#" class="card-link" aria-label="Read more about [Title]">
+                        Read More <span aria-hidden="true">→</span>
+                    </a>
+                    </div>
+                </article>
+                ══════════════════════════════════════════════════════
+                -->
+
+                <!-- No-results message shown by JS when a filter returns 0 items -->
+                <div
+                class="news-no-results"
+                id="news-no-results"
+                role="status"
+                aria-live="polite"
+                hidden
+                >
+                <p>No items in this category yet — check back soon.</p>
+                </div>
+
+            </div><!-- /.news-feed -->
+
+            <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+            <section class="cta-section" aria-labelledby="news-cta-heading">
+                <h2 id="news-cta-heading">Stay Connected</h2>
+                <p>
+                Follow us on LinkedIn for real-time updates on cluster news,
+                events, and new research outputs.
+                </p>
+                <div class="cta-buttons">
+                <a
+                    href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Follow on LinkedIn</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
             </section>
 
-            <!-- News Grid -->
-            <section class="news-grid grid-3">
-                <!-- News Article 1 -->
-                <article class="card">
-                    <img src="images/news-placeholder-1.jpg" alt="Conference announcement image" class="card-img">
-                    <div class="card-content">
-                        <h3>Special Session at ICMB25 Announced</h3>
-                        <p>The Cluster is co-organising a special session titled <em>"Moisture Challenges in Historic and Traditional Buildings"</em> at the International Conference on Moisture in Buildings (ICMB25) in Guimarães, Portugal.</p>
-                        <p class="date">Published: October 2024</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </article>
-
-                <!-- News Article 2 -->
-                <article class="card">
-                    <img src="images/news-placeholder-2.jpg" alt="Research publication image" class="card-img">
-                    <div class="card-content">
-                        <h3>New Paper on Industry 5.0 in Heritage Conservation</h3>
-                        <p>Our latest publication explores the integration of Industry 5.0 principles and enabling technologies for the enhancement of built cultural heritage conservation practices.</p>
-                        <p class="date">Published: December 2024</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </article>
-
-                <!-- News Article 3 -->
-                <article class="card">
-                    <img src="images/news-placeholder-3.jpg" alt="Student research image" class="card-img">
-                    <div class="card-content">
-                        <h3>New URSA PhD Studentships Awarded</h3>
-                        <p>The Cluster has been awarded three 2025/26 URSA Studentships to support research in stone construction, earthen materials, and regenerative heritage reconstruction.</p>
-                        <p class="date">Published: October 2024</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </article>
-
-                <!-- News Article 4 -->
-                <article class="card">
-                    <img src="images/news-placeholder-4.jpg" alt="Workshop image" class="card-img">
-                    <div class="card-content">
-                        <h3>Workshop on Regenerative Retrofitting</h3>
-                        <p>Cluster members hosted an interdisciplinary workshop exploring regenerative retrofitting through ecologically active soil structures under the Reeco-Soil project.</p>
-                        <p class="date">Published: July 2024</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </article>
-
-                <!-- News Article 5 -->
-                <article class="card">
-                    <img src="images/news-placeholder-5.jpg" alt="Collaboration image" class="card-img">
-                    <div class="card-content">
-                        <h3>Collaboration with Historic England</h3>
-                        <p>The Cluster continues to collaborate with Historic England on developing FAIR documentation and management frameworks for cultural heritage assets.</p>
-                        <p class="date">Published: June 2024</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </article>
-
-                <!-- News Article 6 -->
-                <article class="card">
-                    <img src="images/news-placeholder-6.jpg" alt="Student project image" class="card-img">
-                    <div class="card-content">
-                        <h3>Student Project on Beckford's Tower</h3>
-                        <p>MSc students completed a structural assessment of Beckford's Tower's lantern, focusing on its timber and cast-iron structure under the guidance of Cluster staff.</p>
-                        <p class="date">Published: February 2024</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </article>
-            </section>
-
-            <!-- Pagination Placeholder -->
-            <section class="pagination">
-                <a href="#" class="btn secondary">Previous</a>
-                <a href="#" class="btn">Next</a>
-            </section>
         </main>
 
         <!-- Footer -->
@@ -236,7 +386,7 @@
                 <h4>Connect</h4>
                 <ul>
                     <li>
-                    <a href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true" aria-label="HCM Cluster on LinkedIn" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/history-conservation-and-management-cluster/?viewAsMember=true" aria-label="HCM Cluster on LinkedIn" rel="noopener noreferrer" target="_blank">
                         LinkedIn
                     </a>
                     </li>

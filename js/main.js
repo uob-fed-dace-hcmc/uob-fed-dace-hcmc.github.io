@@ -212,6 +212,45 @@ window.addEventListener("mousedown", () => {
 
 
 /* ==============================
+   9. NEWS FILTER
+   Shows/hides news cards based
+   on their data-category value
+============================== */
+
+(function initNewsFilter() {
+  const filterBar  = document.querySelector(".news-filter-bar");
+  if (!filterBar) return;
+
+  const buttons    = filterBar.querySelectorAll(".news-filter-btn");
+  const feed       = document.getElementById("news-feed");
+  const noResults  = document.getElementById("news-no-results");
+  const cards      = feed ? feed.querySelectorAll(".news-card") : [];
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-filter");
+
+      /* Update active button */
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      /* Show / hide cards */
+      let visible = 0;
+      cards.forEach((card) => {
+        const category = card.getAttribute("data-category");
+        const show     = filter === "all" || category === filter;
+        card.hidden    = !show;
+        if (show) visible++;
+      });
+
+      /* No-results state */
+      if (noResults) noResults.hidden = visible > 0;
+    });
+  });
+})();
+
+
+/* ==============================
    7. CONTACT FORM
    Async Formspree submission with
    inline validation + status banners
